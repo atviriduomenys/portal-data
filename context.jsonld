@@ -2,5 +2,6 @@
     "dcat": "http://www.w3.org/TR/vocab-dcat/",
     "foaf": "http://xmlns.com/foaf/spec/",
     "vcard": "http://www.w3.org/TR/vcard-rdf/",
-    "org": "http://www.w3.org/TR/vocab-org/"
+    "org": "http://www.w3.org/TR/vocab-org/",
+    "dc": "http://purl.org/dc/elements/1.1/"
 }
