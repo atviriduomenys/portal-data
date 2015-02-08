@@ -1,0 +1,64 @@
+datasets/{dcat:publisher}:
+  type: object
+  properties:
+    dcat:title: {type: string}
+    dcat:description: {type: string}
+    dcat:issued:
+      type: [string, number]
+      format: [date, date-time]
+    dcat:modified:
+      type: string
+      format: [date, date-time]
+    dcat:language:
+      type: array
+      optional: true
+      items:
+        type: string
+        minLength: 2
+        maxLength: 2
+    dcat:accrualPeriodicity:
+      type: string
+      oneOf:
+        - enum:
+            - triennial
+            - biennial
+            - annual
+            - semiannual
+            - three times a year
+            - quarterly
+            - bimonthly
+            - monthly
+            - semimonthly
+            - biweekly
+            - three times a month
+            - weekly
+            - semiweekly
+            - three times a week
+            - daily
+            - continuous
+            - irregular
+        - pattern: "^\d+(.\d+)?/(year|month|day|hour|minute|second)$"
+    dcat:spatial:
+      type: string
+      pattern: "^http://www\.geonames\.org/\d+/[a-z-]+\.html$"
+    dcat:temporal:
+      type: array
+      items:
+        - description: Start date.
+          oneOf:
+            - type: number
+              description: Year.
+            - type: string
+              format: [date, date-time]
+        - description: End date.
+          oneOf:
+            - type: number
+              description: Year.
+            - type: string
+              format: [date, date-time]
+    dcat:theme: {type: string}
+    dcat:keywords: {type: string}
+    dcat:contactPoint: {type: object}
+    dcat:distribution: {type: object}
+    dcat:landingPage: {type: string, format: url}
+    dcat:publisher: {type: string, pattern: "^publishers/([a-z-]+)$"}

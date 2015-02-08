@@ -1,0 +1,23 @@
+dcat:title: Viešieji pirkimai
+dcat:description: Centrinės viešųjų pirkimų informacinės sistemos duomenys.
+dcat:issued: 2011
+dcat:modified:
+dcat:language: lt
+dcat:accrualPeriodicity: continuous
+dcat:spatial:
+dcat:temporal: 2011
+dcat:theme:
+dcat:keyword:
+  - viešieji pirkimai
+dcat:landingPage: http://www.eviesiejipirkimai.lt/
+dcat:publisher: publishers/viesuju-pirkimu-tarnyba
+dcat:contactPoint:
+  - vcard:adr: 
+      - vcard:street-address: Kareivių g. 1
+        vcard:postal-code: LT-08221
+    vcard:tel:
+      - vcard:value: (8 5) 219 7001
+      - vcard:value: (8 5) 213 6213
+    vcard:email:
+      - vcard:value: info@vpt.lt
+dcat:distribution:
